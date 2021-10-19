@@ -1,7 +1,21 @@
 # imports
-import math
+import sys
+import os.path
 
-#b)
+def parseQuestionsFromFile(filepath):
+  absPath = os.path.join(sys.path[0], filepath)
+  quests = []
+  with open(absPath,"r", encoding="ascii") as file:
+    lines = file.readlines()
+    for line in lines:
+      #parse in format <Spørsmålstekst>: <nummeret til korrekt svar> : [<liste med svaralternativer med komma mellom>]
+      obj = line.split(":")
+      question = obj[0]
+      correctAnswerNum = int(obj[1].strip())
+      answers = obj[2].strip("").strip("[]").split(",")
+      quests.append(Flervalg(question,answers,correctAnswerNum))
+  return quests
+
 class Flervalg:
   # Konstruktør
   def __init__(self, question, answers=[], correctAnswerNum=1):
