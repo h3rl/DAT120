@@ -2,45 +2,45 @@
 import math
 
 #b)
+
 class Flervalg:
   # Konstruktør
-  def __init__(self, question, answers=[], correctAnswerNum=1):
+  
+  def __init__(self, question, correctAnswerIndex=1,answers=[]):
     self.question = question
     self.answers = answers
-    self.correctAnswerNum = str(correctAnswerNum)
-    self.answeriscorrect = False
-
-  def getCorrectAnswerString(self):
-    return self.answers[self.correctAnswerNum-1]
+    self.correctAnswerIndex = correctAnswerIndex
 
   # Gir en strengrepresentasjon av objektet som skal gi mening for
   # en bruker
   def __str__(self):
-    retstr=f"{self.question}\n"
-    for idx, spm in enumerate(self.answers):
-      retstr+=f"  #{idx+1} - {spm}\n"
-    #fjern siste \n
-    return retstr[:-1]
+    retstr=f"{self.question}\nAlternativer:\n"
+    for index, answer in enumerate(self.answers):
+      retstr+=f"  #{index}: {answer}\n"
+    return retstr
+
+  def get_svar(self):
+    while True:
+      try:
+        answer = int(input("Skriv ditt alternativ: "))
+        # hvis vi kommer så langt er svaret et tall
+        return answer
+      except:
+        print("Det du skrev var ikke et tall, prøv igjen")
   
-  def getInput(self):
-    ans = input("mitt alternativ: #")
-    if ans == self.correctAnswerNum:
-      self.answeriscorrect = True
-    return
-
-  def getResult(self):
-    if self.answeriscorrect:
-      print("riktig svar!")
-    else:
-      print(f"feil, svaret er #{self.correctAnswerNum} {self.getCorrectAnswerString()}")
-
+  def sjekk_svar(self,answer):
+    if self.correctAnswerIndex == answer:
+      print("Riktig svar!\n")
+      return True
+    print(f"Feil, svaret er #{self.correctAnswerIndex}: {self.answers[self.correctAnswerIndex]}\n")
+    return False
 
 if __name__ == "__main__":
-  oppg = Flervalg("hvor mange hjul har en bil?",["2","4","6"],2)
-  oppg2 = Flervalg("hvilken farge er himmelen?",["blå","grønn","lilla","rosa"],1)
+  oppg = Flervalg("hvor mange hjul har en bil?",1,["2","4","6"])
+  oppg2 = Flervalg("hvilken farge er himmelen?",0,["blå","grønn","lilla","rosa"])
   print(oppg)
-  oppg.getInput()
-  oppg.getResult()
+  inp = oppg.get_svar()
+  oppg.sjekk_svar(inp)
   print(oppg2)
-  oppg2.getInput()
-  oppg2.getResult()
+  inp = oppg2.get_svar()
+  oppg2.sjekk_svar(inp)
