@@ -1,0 +1,13 @@
+DAT120 øving 8: Dictionaries, klasser og objekter
+
+Læringsmål
+
+Du skal lære å bruke dictionaries. Du skal lære hvordan å skrive en egen klasse. Du skal lære hvordan å bruke den egendefinerte klassen.
+Oppgaver
+
+a)	Lag et program som leser gjennom ei tekstfil. For hvert ord i tekstfila skal programmet registrere ordet og linjenummeret der ordet først forekommer i et dictionary. Så skal programmet skrive ut ordene og linjenumrene. Du kan bygge løsningen din på eksemplet «ordteller_dict.py» fra tema 11 samlingsobjekter. Dette eksemplet løser et liknende problem. Oppgaveteksten til øving 1 samt denne øvingen som rein tekst er lagt ved oppgaven.
+b)	Som del av et spørrespill skal du lage en klasse for flervalgspørsmål (hele spillet er muligens øving 9 og 10). Et flervalgspørsmål skal ha en spørsmålstekst, ei liste med svaralternativer (hvert svaralternativ er en tekststreng), og et tall som sier hvilket av svaralternativene som er korrekt. Klassen skal ha en __str__ metode som returnerer en streng som inneholder spørsmålsteksten og nummerte svaralternativer på et lett leselig format. Klassen skal ha en sjekk_svar metode som tar som parameter et heltall som representerer hvilket svar brukeren velger. Sjekk_svar metoden skal sjekke om svaret brukeren har oppgitt er korrekt. 
+c)	Lag kode som oppretter to instanser av klassen flervalgspørsmål, stiller spørsmålene, ber brukeren om svar, og skriver ut om brukeren svarte korrekt eller ikke.
+d)	Frivillig: I stedet for å bare registrere første forekomst av ordet i programmet fra oppgave a, registrer alle forekomstene i ei liste. Du må da ha ei liste i stedet for et tall som verdi i dictionaryet.
+e)	Frivillig: Skriv ut ordene i dictionariet fra oppgave a i alfabetisk rekkefølge.
+

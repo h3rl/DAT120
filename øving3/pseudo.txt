@@ -1,0 +1,11 @@
+
+* sette lengde og avstand til egene variabler
+* spør om antall ønskede diamanter og lagre som en int
+
+* tegne x antall diamanter i en for løkke
+  * sette pen ned
+  * tegne diamant med lengde fra variabler
+  * tegner ikke siste diamant?
+    * flytte turtle så vi får avstand til neste diamant
+    * endre lengde slik at den blir større en forrige diamant
+

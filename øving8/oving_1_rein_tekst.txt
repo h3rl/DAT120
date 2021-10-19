@@ -1,0 +1,19 @@
+DAT120 øving 1: Introduksjon til programmering
+Læringsmål
+Du skal lære hvordan å bruke Python. Dy skal lære hvordan å skrive enkle Python script. Du skal lære hvordan å lese inn data fra brukeren og skrive ut resultater til brukeren av scriptet.
+Oppgaver
+1.  Utforsk mappestrukturen til datamaskinen din. Finn ut hvor du ønsker å legge Python filene du skriver til øvingene i DAT120. Lag en mappe for disse Python-filene. Lag en undermappe for øving 1. Vis studentassistenten hvor disse mappene er i filstrukturen til datamaskina di.
+2.	Bruk Python tolkeren (nedre høyre vindu i Spyder) til å regne ut regnestykket 3 + 2*(4+3). Vis dette til studentassistenten under godkjenning.
+3.	Bruk Python tolkeren (nedre høyre vindu i Spyder) til å lage noen variabler og gi dem verdier. Lag en variabel som inneholder resultatet av regnestykket i forrige deloppgave. Bruk denne verdien inn i regnestykket x*2 – 9, hvor x er resultatet fra forrige deloppgave. Vis dette for studentassistenten under godkjenning.
+4.	Forklar til studentassistenten hva følgende program gjør uten å kjøre det. Tanken er at du skal lære deg å lese programkode og skjønne hva den gjør.
+
+5.	Den innebygde funksjonen chr(x) tar inn et tall x og returnerer det tilsvarende tegnet fra UTF-8 kodetabellen som en streng med ett tegn. Skriv et script som lar brukeren skrive inn et tall. Så skal skriptet skrive ut det tilsvarende tegnet.
+6.	Den innebygde funksjonen ord(x) tar inn en streng med ett tegn og returnerer tallverdien for dette tegnet i UTF-8 kodetabellen. Skriv et script som lar brukeren skrive inn et tegn. Så skal skriptet konvertere tegnet til et tall og skrive ut tallet.
+7.	Skriv et script som beregner hvor langt et objekt har falt etter en gitt tid. Anta at det står stille og at du slipper det ved tid 0. Programmet skal
+a.	Lese inn et tall fra brukeren, som er antall sekunder objektet har falt.
+b.	Regne ut farten i meter pr. sekund etter det antallet sekunder med formelen fart = akselerasjon*tid. Akselerasjonen fra tyngdekraften er 9,81 m/s2.
+c.	Regne ut distansen objektet har falt i meter med formelen distanse = 0,5*fart*tid
+d.	Skrive ut fart og distanse.
+
+
+
