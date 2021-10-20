@@ -10,4 +10,3 @@ b)	Som del av et spørrespill skal du lage en klasse for flervalgspørsmål (hel
 c)	Lag kode som oppretter to instanser av klassen flervalgspørsmål, stiller spørsmålene, ber brukeren om svar, og skriver ut om brukeren svarte korrekt eller ikke.
 d)	Frivillig: I stedet for å bare registrere første forekomst av ordet i programmet fra oppgave a, registrer alle forekomstene i ei liste. Du må da ha ei liste i stedet for et tall som verdi i dictionaryet.
 e)	Frivillig: Skriv ut ordene i dictionariet fra oppgave a i alfabetisk rekkefølge.
-

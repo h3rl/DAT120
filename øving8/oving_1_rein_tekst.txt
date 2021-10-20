@@ -14,6 +14,3 @@ a.	Lese inn et tall fra brukeren, som er antall sekunder objektet har falt.
 b.	Regne ut farten i meter pr. sekund etter det antallet sekunder med formelen fart = akselerasjon*tid. Akselerasjonen fra tyngdekraften er 9,81 m/s2.
 c.	Regne ut distansen objektet har falt i meter med formelen distanse = 0,5*fart*tid
 d.	Skrive ut fart og distanse.
-
-
-
